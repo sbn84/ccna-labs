@@ -1,0 +1,192 @@
+!
+version 12.2(37)SE1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname MLS1
+!
+!
+no profinet
+!
+!
+!
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/2
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/4
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/5
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/6
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/7
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/8
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/9
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/10
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/11
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/12
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/13
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/14
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/15
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/16
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/17
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/18
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/19
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/20
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/21
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/22
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/23
+ shutdown
+!
+interface FastEthernet0/24
+ shutdown
+!
+interface GigabitEthernet0/1
+ shutdown
+!
+interface GigabitEthernet0/2
+ description Trunk zu SW2
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,99,999
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport nonegotiate
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ description Gateway VERWALTUNG
+ mac-address 0060.2fc3.c301
+ ip address 10.10.10.1 255.255.255.0
+!
+interface Vlan20
+ description Gateway VERTRIEB
+ mac-address 0060.2fc3.c302
+ ip address 10.10.20.1 255.255.255.0
+!
+interface Vlan30
+ description Gateway IT
+ mac-address 0060.2fc3.c303
+ ip address 10.10.30.1 255.255.255.0
+!
+interface Vlan99
+ description Gateway + Management
+ mac-address 0060.2fc3.c304
+ ip address 10.10.99.1 255.255.255.0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ logging synchronous
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end
+
