@@ -1,7 +1,5 @@
 # CCNA Labs
 
-> **Summary (EN):** Hands-on CCNA lab portfolio built in Cisco Packet Tracer: VLANs, inter-VLAN routing, OSPF, DHCP/NAT, ACLs, STP/HSRP and IPv6. Each lab documents scenario, addressing plan, configuration (with the *why* behind each command), verification and honest troubleshooting. Documentation is in German. These are lab environments, not production networks.
-
 ## Über dieses Repository
 
 Dieses Repository dokumentiert meine praktischen Übungen zu den Themen des **Cisco CCNA**. Jedes Lab hat ein realitätsnahes Szenario (z. B. „kleines Büro mit drei Abteilungen“) und ist so aufgebaut, dass ich jeden Schritt erklären kann:
@@ -28,21 +26,3 @@ Dieses Repository dokumentiert meine praktischen Übungen zu den Themen des **Ci
 | Py | Python-Tools | Subnet-Rechner, Config-Generator aus CSV, Parser für `show`-Ausgaben | 🔜 geplant |
 
 > **Hinweis zu Python:** Packet Tracer erlaubt keine direkte Verbindung über Netmiko o. Ä. Die Python-Tools arbeiten deshalb eigenständig – sie erzeugen oder analysieren Konfigurationen.
-
-## Über mich
-
-- Absolvent der **HTL Wien West**, Kolleg für Informatik, Schwerpunkt Systemtechnik (2026)
-- Seit 2021 eigenständig verantwortlich für die IT einer Apotheke (ca. 12 Arbeitsplätze): Support, Windows-Clients, Google Workspace, Koordination mit externen Dienstleistern
-- **CCNA** in Vorbereitung
-- Ziel: Einstieg in Enterprise-Networking und Systemadministration in Wien
-
-Praktische Netzwerkerfahrung habe ich bisher in Laborumgebungen gesammelt – dieses Repository zeigt, was ich dort umgesetzt und verstanden habe.
-
-## Werkzeuge
-
-- Cisco Packet Tracer 9.0.1
-- Git / GitHub
-
-## Kontakt
-
-- LinkedIn: *[Link einfügen]*
